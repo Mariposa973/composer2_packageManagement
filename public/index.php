@@ -2,9 +2,13 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 //require __DIR__ . '/../src/Wcs/Hello.php';
-//use \App\Wcs\Hello;
+use \App\Wcs\Hello;
+use \HelloWorld\SayHello;
 
-$hello = new \App\Wcs\Hello();
-echo $hello->talk();
+$hello = new Hello();
+echo $hello->talk() . '<br>';
+
+$helloWorld = new SayHello();
+echo $helloWorld->world();
 
 ?>
